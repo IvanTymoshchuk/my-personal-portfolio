@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/svg/header-img.svg';
@@ -44,16 +45,22 @@ export const Banner = () => {
                     {`Hi! I'm Ivan -`} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I am a qualified front-end developer with
-                    one years experience. Strong creative and analytical skills. Team
+                    I am a qualified front-end developer with one years
+                    experience. Strong creative and analytical skills. Team
                     player. Development, practice and work for the result are
                     important for me. I am skillful in analyzing problems and
                     thinking of solutions to accurately troubleshoot and solve
                     technical problems.
                   </p>
-                  <button onClick={() => console.log('connect')}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <Link
+                    to="https://www.linkedin.com/in/ivan-tymoshchukk"
+                    target="blanck"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <button>
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </button>
+                  </Link>
                 </div>
               )}
             </TrackVisibility>

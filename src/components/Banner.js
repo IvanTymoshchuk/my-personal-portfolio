@@ -5,6 +5,7 @@ import headerImg from '../assets/img/svg/header-img.svg';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const toRotate = ['Web Developer'];
   const [text, setText] = useState('');
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
@@ -24,7 +25,7 @@ export const Banner = () => {
     }, 300);
 
     return () => clearInterval(interval);
-  }, [currentCharIndex]);
+  }, [currentCharIndex, toRotate]);
 
   return (
     <section className="banner" id="home">

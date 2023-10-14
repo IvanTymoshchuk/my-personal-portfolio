@@ -1,16 +1,22 @@
+import './App.css';
+import 'animate.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from './NavBar';
+import { Banner } from './Banner';
+import { Skils } from './Skils';
+import { Projects } from './Projects';
+import { Footer } from './Footer';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <NavBar />
+      <Banner />
+      <Skils />
+      <Projects />
+      <Footer />
+    </>
   );
 };
+
+export default App;

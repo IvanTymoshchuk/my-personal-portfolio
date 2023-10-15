@@ -1,4 +1,4 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -7,26 +7,26 @@ import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // const toRotate = ['Web Developer'];
-  // const [text, setText] = useState('');
-  // const [currentCharIndex, setCurrentCharIndex] = useState(0);
+  const toRotate = ['Web Developer'];
+  const [text, setText] = useState('');
+  const [currentCharIndex, setCurrentCharIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (currentCharIndex <= toRotate[0].length) {
-  //       setText(toRotate[0].slice(0, currentCharIndex));
-  //       setCurrentCharIndex(currentCharIndex + 1);
-  //     } else {
-  //       clearInterval(interval);
-  //       setTimeout(() => {
-  //         setCurrentCharIndex(0);
-  //         setText('');
-  //       }, 1000);
-  //     }
-  //   }, 300);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentCharIndex <= toRotate[0].length) {
+        setText(toRotate[0].slice(0, currentCharIndex));
+        setCurrentCharIndex(currentCharIndex + 1);
+      } else {
+        clearInterval(interval);
+        setTimeout(() => {
+          setCurrentCharIndex(0);
+          setText('');
+        }, 1000);
+      }
+    }, 300);
 
-  //   return () => clearInterval(interval);
-  // }, [currentCharIndex, toRotate]);
+    return () => clearInterval(interval);
+  }, [currentCharIndex, toRotate]);
 
   return (
     <section className="banner" id="home">
@@ -40,7 +40,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">{text}</span>
                   <h1>
                     {`Hi! I'm Ivan -`} <span className="wrap">'Web Developer'</span>
                   </h1>

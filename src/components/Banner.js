@@ -45,12 +45,10 @@ export const Banner = () => {
                     {`Hi! I'm Ivan -`} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I am a qualified front-end developer with one years
-                    experience. Strong creative and analytical skills. Team
-                    player. Development, practice and work for the result are
-                    important for me. I am skillful in analyzing problems and
-                    thinking of solutions to accurately troubleshoot and solve
-                    technical problems.
+                    I focus on JavaScript and React. Development, practice, and
+                    work for the result are important for me. I am skilled in
+                    analyzing problems and thinking of solutions to troubleshoot
+                    and solve technical problems accurately.
                   </p>
                   <Link
                     to="https://www.linkedin.com/in/ivan-tymoshchukk"

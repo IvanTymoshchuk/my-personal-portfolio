@@ -9,13 +9,13 @@ import { Footer } from './Footer';
 
 export const App = () => {
   return (
-    <>
+    <main>
       <NavBar />
       <Banner />
       <Skils />
       <Projects />
       <Footer />
-    </>
+    </main>
   );
 };
 

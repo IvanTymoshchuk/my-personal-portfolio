@@ -94,6 +94,7 @@ p.danger {
 } */
 /************ Navbar Css ************/
 nav.navbar {
+  
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -108,6 +109,10 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
   width: 9%;
 }
+
+.ms{
+  gap: 20px;
+}
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -121,6 +126,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 span.navbar-text {
+  
   display: flex;
   align-items: center;
 }
@@ -266,7 +272,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 27px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -358,8 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
-  position: relative;
+  padding: 150px 0;
 }
 .project h2 {
   font-size: 45px;

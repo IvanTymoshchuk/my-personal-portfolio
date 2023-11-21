@@ -7,6 +7,7 @@ import projImg6 from '../assets/img/projects/6.png';
 import projImg7 from '../assets/img/projects/7.png';
 import projImg8 from '../assets/img/projects/8.png';
 import projImg9 from '../assets/img/projects/9.png';
+import projImg10 from '../assets/img/projects/10.png';
 import navIcon1 from '../assets/img/svg/github.svg';
 import look from '../assets/img/svg/search.svg';
 
@@ -39,12 +40,12 @@ export const projects = [
     proj: look,
   },
   {
-    title: 'Game',
+    title: 'Business Startup',
     description: 'Design & Development',
-    imgUrl: projImg1,
-    gitHubHref: 'https://github.com/IvanTymoshchuk/Guess-the-number',
+    imgUrl: projImg10,
+    gitHubHref: 'https://github.com/IvanTymoshchuk/gym',
     gitHub: navIcon1,
-    projHubHref: 'https://ivantymoshchuk.github.io/Guess-the-number/',
+    projHubHref: 'https://ivantymoshchuk.github.io/gym/',
     proj: look,
   },
   {
@@ -93,6 +94,15 @@ export const projects2 = [
     gitHubHref: 'https://github.com/IvanTymoshchuk/Architecture',
     gitHub: navIcon1,
     projHubHref: 'https://ivantymoshchuk.github.io/Architecture/',
+    proj: look,
+  },
+  {
+    title: 'Game',
+    description: 'Design & Development',
+    imgUrl: projImg1,
+    gitHubHref: 'https://github.com/IvanTymoshchuk/Guess-the-number',
+    gitHub: navIcon1,
+    projHubHref: 'https://ivantymoshchuk.github.io/Guess-the-number/',
     proj: look,
   },
 ];
